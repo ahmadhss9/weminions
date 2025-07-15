@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery Page</title>
+ <style>
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
+
+background: linear-gradient(
+  135deg,
+  #ff6a00 0%,
+  #bc2e1e 10%,
+  #c91212 20%,
+
+  #ee0979 30%,
+  #00c9ff 60%,
+  #92fe9d 100%
+);
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gradient-text {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #201143, #400c25);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.gallery-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.gallery-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.gallery-item .image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item .content {
+  max-width: 500px;
+}
+
+.gallery-item .content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.gallery-item .content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+ </style>
+</head>
+<body>
+  <header>
+    <h1 class="gradient-text">Our Stunning Gallery</h1>
+  </header>
+
+  <section class="gallery">
+    <!-- Item 1 -->
+    <div class="gallery-item">
+      <div class="image">
+        <img src="https://i.ibb.co/Y4C60mbD/retouch-2025051512412406.jpg" alt="retouch-2025051512412406" border="0">
+      </div>
+      <div class="content">
+        <h2>CM laptop Distribution Cermoney 🥳</h2>
+        <p>We (Ahmad ,Abdullah & Azeem ) went to faisalabad to get our laptops </p>
+      </div>
+    </div>
+
+    <!-- Item 2 (reversed) -->
+    <div class="gallery-item reverse">
+      <div class="image">
+        <img src="https://i.ibb.co/gZ94SnFZ/IMG-20250313-WA0023-3.jpg" alt="IMG-20250313-WA0023-3" border="0">
+      </div>
+      <div class="content">
+        <h2>Memory in College Ground</h2>
+        <p>This image tells a different tale, a moment captured beautifully.</p>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="gallery-item">
+      <div class="image">
+      <img src="https://i.ibb.co/7drY1k41/IMG-20250715-183320.jpg" alt="IMG-20250715-183320" border="0">
+      </div>
+      <div class="content">
+        <h2>Legend Azeem </h2>
+        <p>Shah  Called us to meet and came late after an hour 😭😭</p>
+      </div>
+    </div>
+<!-- Item 4 -->
+    <div class="gallery-item reverse">
+      <div class="image">
+       <img src="https://i.ibb.co/prxX73Qf/IMG-20250331-WA0014.jpg" alt="IMG-20250331-WA0014" border="0">
+      </div>
+      <div class="content">
+        <h2>Eid ul Fitr </h2>
+        <p>Our meetup on 1st day of Eid ul Fitr </p>
+      </div>
+    </div>
+    <!-- Item 5 -->
+    <div class="gallery-item">
+      <div class="image">
+       <img src="https://i.ibb.co/nN5nJLrK/IMG-20250326-103325-891.jpg" alt="IMG-20250326-103325-891" border="0">
+      </div>
+      <div class="content">
+        <h2>RUS-bERRY Hiest </h2>
+        <p>Came to submit our physics assignment but we robbed college's trees😁😁</p>
+      </div>
+    </div>
+    <!-- Item 6 -->
+    <div class="gallery-item reverse">
+      <div class="image">
+       <img src="https://i.ibb.co/4ZmR5PV3/IMG-20250715-183242.jpg" alt="IMG-20250715-183242" border="0">
+      </div>
+      <div class="content">
+        <h2>Rain memories</h2>
+        <p>1st day of our 2nd semester in college, A lovely and Rainy Day</p>
+      </div>
+    </div>
+ 
+    
+  </section>
+</body>
+</html>
